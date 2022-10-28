@@ -17,6 +17,7 @@
 
 *{
     font-family: var(--textos);
+    box-sizing: border-box;
 }
 
 body{
@@ -47,7 +48,6 @@ p{
 
 header{
     padding: 2rem 1rem;
-    max-width: 800px;
     width: 100%;
     margin: 0 auto;
 }
@@ -55,18 +55,17 @@ header{
 header h1{
     font-size: 3rem;
     padding: 0;
-    margin: 0 0 1.5rem 0;
     font-weight: bolder;
     color: var(--amarillo__acido);
+    width: 90%;
+    margin: 2rem auto;
 }
 
-header p{
-     margin: 0 0 .5rem 0;
-     color: var(--cobre);
-}
 
 #nueva-tarea-formulario{
    display: flex; 
+   width: 90%;
+   margin: auto;
 }
 
 input, button{
@@ -115,8 +114,7 @@ input, button{
 main{
     flex: 1 1 0%;
     padding: 2rem 1rem;
-    max-width: 800px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -190,4 +188,30 @@ main{
 
 #tareas .tarea .contenido{
     flex: 1 1 0%;
+}
+
+
+@media screen and (max-width:978px) {
+
+    header{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    header .encabezado h1{
+        font-size: 2.5rem;
+    }
+
+    #nueva-tarea-formulario{
+   display: flex; 
+   width: 92%;
+    }
+    
+    main{
+    padding: .5rem .5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 }
