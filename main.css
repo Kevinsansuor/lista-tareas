@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Hind+Vadodara:wght@400;700&family=Montserrat:wght@400;900&display=swap');
+
+:root{
+    --blanco: #e0e0e2;
+    --gris: #626267;
+    --negro: #353535;
+    --negro__oscuro: #0f0e0e;
+
+    --cobre: #C57B57;
+    --amarillo__acido: #BAB700;
+
+    --titulos: 'Montserrat', sans-serif;
+    --subtitulos: 'Hind Vadodara', sans-serif;
+    --textos: 'Hind Madurai', sans-serif;
+
+}
+
+*{
+    font-family: var(--textos);
+}
+
+body{
+    background-color: var(--negro__oscuro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+}
+
+h1{
+    font-family: var(--titulos);
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+h2{
+    font-family: var(--subtitulos);
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+p{
+    font-family: var(--textos);
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 3rem;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    font-weight: bolder;
+    color: var(--amarillo__acido);
+}
+
+header p{
+     margin: 0 0 .5rem 0;
+     color: var(--cobre);
+}
+
+#nueva-tarea-formulario{
+   display: flex; 
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#nueva-tarea-formulario-ingreso{
+    flex: 1 1 0%;
+    background-color: var(--negro);
+    font-family: var(--titulos);
+    font-size: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: var(--blanco);
+}
+
+#nueva-tarea-formulario-ingreso::placeholder{
+    color: var(--cobre);
+    opacity: 0.6;
+    
+}
+
+#nueva-tarea-formulario-subir{
+    color: var(--blanco);
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: var(--cobre);
+    padding: 0 1.5rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#nueva-tarea-formulario-subir:hover{
+    opacity: 0.8;
+}
+
+#nueva-tarea-formulario-subir:active{
+    opacity: 0.6;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lista-tareas{
+    padding: 1rem ;
+}
+
+.lista-tareas h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+#tareas .tarea{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--negro);
+    padding: 1rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    color: var(--blanco);
+}
+
+
+
+#tareas .tarea .contenido .texto{
+    color: var(--blanco);
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    transition: .5s;
+}
+
+#tareas .tarea .contenido .texto:not(:read-only){
+    color: var(--cobre);
+}
+
+#tareas .tarea .accion{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+#tareas .tarea .accion button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    font-family: var(--subtitulos);
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: .5s;;
+}
+
+#tareas .tarea .accion .editar{
+    color: var(--blanco);
+    cursor: pointer;
+}
+
+#tareas .tarea .accion .eliminar{
+    color: var(--cobre);
+    cursor: pointer;
+}
+
+#tareas .tarea .accion button:hover{
+    opacity: 0.8;
+}
+
+#tareas .tarea .accion button:active{
+    opacity: 0.6;
+}
+
+#tareas .tarea .contenido{
+    flex: 1 1 0%;
+}
