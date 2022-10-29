@@ -46,6 +46,13 @@
     display: flex;
     flex-direction: column;
     border-radius: .5rem;
+    box-shadow: 1px 1px 5px #8b8b8b2f;
+   }
+
+   #tareas .tarea .texto{
+    overflow-x:scroll;
+    width: max-content;
+    height: auto;
    }
 
    #tareas .tarea .accion{
