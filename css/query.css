@@ -1,0 +1,55 @@
+@media screen and (max-width:978px) {
+
+   header {
+    padding: .5rem 0 1.5rem 0;
+   }
+
+   header .encabezado{
+    padding-bottom: .5rem;
+   }
+
+   header form{
+    display: block;
+    
+   }
+
+   #nueva-tarea-formulario{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding: 1rem;
+   }
+
+   #nueva-tarea-formulario-ingreso{
+    width: 100%;
+    margin: 0;
+    border-radius: .5rem;
+   }
+
+   #nueva-tarea-formulario #nueva-tarea-formulario-subir{
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin-left: auto;
+    margin-top: .5rem;
+    border-radius: .5rem;
+   }
+
+
+   main{
+    display: block;
+    padding: .5rem 0 1.5rem 0;
+    width: 100%;
+   }
+
+   #tareas .tarea{
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+   }
+
+   #tareas .tarea .accion{
+    justify-content: flex-end;
+    margin-top: .5rem;
+   }
+}

@@ -191,27 +191,3 @@ main{
 }
 
 
-@media screen and (max-width:978px) {
-
-    header{
-        padding: 0%;
-        margin: 0%;
-    }
-
-    header .encabezado h1{
-        font-size: 2.5rem;
-    }
-
-    #nueva-tarea-formulario{
-   display: flex; 
-   width: 92%;
-    }
-    
-    main{
-    padding: .5rem .5rem;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-}
