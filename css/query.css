@@ -43,10 +43,11 @@
    }
 
    #tareas .tarea{
+    border: solid var(--cobre) 1px;
     display: flex;
     flex-direction: column;
     border-radius: .5rem;
-    box-shadow: 1px 1px 5px #8b8b8b2f;
+    box-shadow: 1px 1px 10px #9b9b9b6c;
    }
 
    #tareas .tarea .texto{
